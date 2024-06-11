@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="./style/desingmain.css" as="style" />
+    <link href="./style/desingmain.css" rel="stylesheet" />
     <title>Resume</title>
   </head>
 
   <body>
     <header>
-      <h1>Estevan Tangarife Correa</h1>
+      <h1 class="TittleMyName">
+        Estevan Tangarife Correa Software
+        <span class="developmentspam">Software Development</span>
+      </h1>
     </header>
-
-    <nav>
+    <nav class="navigationBar">
       <a href="mainpage">Inicio</a>
       <a href="#">About me</a>
       <a href="#">My proyects</a>
@@ -143,21 +147,26 @@
       <form>
         <fieldset>
           <legend>Contact me at</legend>
-          <label>Name</label>
-          <input type="text" placeholder="Name" />
-
-          <label>Phone</label>
-          <input type="tel" placeholder="9134565" />
-
-          <label>Email</label>
-          <input type="email" placeholder="pepito@.." />
-
-          <label>Menssage</label>
-          <textarea type="" placeholder="Im say you some..."></textarea>
-
-          <input type="submit" value="Send" />
-
-          <button type="submit">clear</button>
+          <div>
+            <label>Name</label>
+            <input type="text" placeholder="Name" />
+          </div>
+          <div>
+            <label>Phone</label>
+            <input type="tel" placeholder="9134565" />
+          </div>
+          <div>
+            <label>Email</label>
+            <input type="email" placeholder="pepito@.." />
+          </div>
+          <div>
+            <label>Menssage</label>
+            <textarea type="" placeholder="Im say you some..."></textarea>
+          </div>
+          <div>
+            <input type="submit" value="Send" />
+            <button type="submit">clear</button>
+          </div>
         </fieldset>
       </form>
     </section>

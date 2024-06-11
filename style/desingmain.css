@@ -1,0 +1,38 @@
+/*Entre comillas estos dos selectores hacen que sean mas facil de utilizar los rem*/
+html {
+  font-size: 62.5%; /*Esto es como un hackeo general en diseño*/
+  /*Ya que hace que se reinicio por decirlo asi la pantalla*/
+}
+
+body {
+  font-size: 16px; /*Siempre se coloca lo que es el html y 
+el body que son los encargados de contener todo el codigo*/
+  /* 1rem = 10px */
+}
+
+/*         1rem = 10px             */
+
+.TittleMyName {
+  /*Para centrar un texto horizontalmente*/
+  text-align: center;
+  color: rgb(100, 1, 180);
+  font-size: 3.8rem; /* estos rem vienen siendo  30 pixeles*/
+}
+.navigationBar {
+  background-color: gray;
+  text-align: center;
+}
+
+.developmentspam {
+  color: gray !important;
+}
+
+.developmentspam {
+  color: red;
+  font-size: 2rem;
+}
+
+.developmentspam {
+  color: rgb(0, 255, 55);
+  font-size: 2rem;
+}
