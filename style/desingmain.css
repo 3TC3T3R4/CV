@@ -1,3 +1,10 @@
+:root {
+  --white: #ffffff;
+  --black: #212121;
+  --primary: #aaaaaa;
+  --second: #ffc107;
+}
+
 /*Entre comillas estos dos selectores hacen que sean mas facil de utilizar los rem*/
 html {
   font-size: 62.5%; /*Esto es como un hackeo general en diseño*/
@@ -17,6 +24,8 @@ el body que son los encargados de contener todo el codigo*/
   text-align: center;
   color: rgb(100, 1, 180);
   font-size: 3.8rem; /* estos rem vienen siendo  30 pixeles*/
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .navigationBar {
   background-color: gray;
@@ -24,15 +33,6 @@ el body que son los encargados de contener todo el codigo*/
 }
 
 .developmentspam {
-  color: gray !important;
-}
-
-.developmentspam {
-  color: red;
-  font-size: 2rem;
-}
-
-.developmentspam {
-  color: rgb(0, 255, 55);
+  color: var(--primary);
   font-size: 2rem;
 }
