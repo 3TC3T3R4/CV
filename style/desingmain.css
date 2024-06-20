@@ -1,8 +1,14 @@
+/*ESTA PLANTILLA CSS ESTARE PROGRAMANDO LA MANERA MODULOS*/
+/*Ya que BEM Es tedioso y Utility first es mucho codigo*/
+
 :root {
   --white: #ffffff;
   --black: #212121;
   --primary: #aaaaaa;
   --second: #ffc107;
+  --purpleGithub: #6f42c1;
+  --CustomOrgange: #ff7003;
+  --trasnparentGray: #8080800f;
 }
 
 /*Entre comillas estos dos selectores hacen que sean mas facil de utilizar los rem*/
@@ -15,6 +21,13 @@ body {
   font-size: 16px; /*Siempre se coloca lo que es el html y 
 el body que son los encargados de contener todo el codigo*/
   /* 1rem = 10px */
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    35deg,
+    rgba(0, 0, 0, 1) 7%,
+    rgba(168, 168, 168, 1) 59%,
+    rgba(255, 111, 0, 1) 85%
+  );
 }
 
 /*         1rem = 10px             */
@@ -33,25 +46,30 @@ el body que son los encargados de contener todo el codigo*/
   color: var(--primary);
   font-size: 2rem;
 }
+
+.imageMyLogo {
+  width: 7rem;
+  height: 6rem;
+  margin-right: 68.5rem;
+}
 .navigationBar {
-  background-color: var(--primary);
+  background-color: var(--trasnparentGray);
+  height: 6rem;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10rem;
-  height: 6rem;
 }
 .customContainer a {
   text-decoration: none;
   color: var(--white);
-  padding: 2rem 0 2rem 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: larger;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  font-size: 1.9rem;
   font-weight: 400;
 }
-.imageMyLogo {
-  width: 7rem;
-  height: 6rem;
-  padding: 0rem 65rem 0rem 0rem;
-  pointer-events: all;
+
+.customContainer a:hover {
+  color: var(--primary);
+  text-decoration: solid;
 }
