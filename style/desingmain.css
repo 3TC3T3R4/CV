@@ -8,7 +8,7 @@
   --second: #ffc107;
   --purpleGithub: #6f42c1;
   --CustomOrgange: #ff7003;
-  --trasnparentGray: #8080800f;
+  --trasnparentGray: #80808025;
 }
 
 /*Entre comillas estos dos selectores hacen que sean mas facil de utilizar los rem*/
@@ -52,13 +52,19 @@ el body que son los encargados de contener todo el codigo*/
   height: 6rem;
   margin-right: 68.5rem;
 }
+
 .navigationBar {
   background-color: var(--trasnparentGray);
-  height: 6rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
-.customContainer a {
+@media (min-width: 780px) {
+  .navigationBar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.navigationBar a {
   text-decoration: none;
   color: var(--white);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -68,8 +74,57 @@ el body que son los encargados de contener todo el codigo*/
   font-size: 1.9rem;
   font-weight: 400;
 }
-
-.customContainer a:hover {
+@media (min-width: 750px) {
+  .customContainer {
+    align-items: center;
+  }
+}
+.navigationBar a:hover {
   color: var(--primary);
   text-decoration: solid;
+  background-color: var(--black);
+}
+/**
+ * This section of code contains media queries for responsive design.
+ * Media queries are used to apply different styles based on the device's screen size or other characteristics.
+ * The following media queries are defined:
+ *
+ * 1. @media (max-width: 600px) - Styles applied when the screen width is 600 pixels or less.
+ * 2. @media (min-width: 601px) and (max-width: 900px) - Styles applied when the screen width is between 601 and 900 pixels.
+ * 3. @media (min-width: 901px) - Styles applied when the screen width is 901 pixels or more.
+ *
+ * These media queries help ensure that the website's layout and design adapt to different screen sizes and provide a better user experience.
+ */
+
+@media (max-width: 480px) {
+  /* Styles for devices with screen width up to 480 pixels */
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Styles for devices with screen width between 481 and 767 pixels */
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for devices with screen width between 768 and 1023 pixels */
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  /* Styles for devices with screen width between 1024 and 1199 pixels */
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  /* Styles for devices with screen width between 1200 and 1439 pixels */
+}
+
+/*Laptop*/
+@media (min-width: 1440px) and (max-width: 1919px) {
+  /* Styles for devices with screen width between 1440 and 1919 pixels */
+}
+
+@media (min-width: 1920px) and (max-width: 2559px) {
+  /* Styles for devices with screen width between 1920 and 2559 pixels */
+}
+
+@media (min-width: 2560px) {
+  /* Styles for devices with screen width of 2560 pixels or more */
 }
